@@ -67,7 +67,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     master.vm.provision "shell", inline: 'apt-get install -y git'
 
     # Synced dirs
-    master.vm.synced_folder "puppet/environments/#{PUPPET_ENV}", "/tmp/environment"
+    master.vm.synced_folder "/Users/malnick/projects/puppet/environments/#{PUPPET_ENV}", "/tmp/environment"
     master.vm.synced_folder "puppet/", "/tmp/puppet"
     master.vm.synced_folder "puppet/filestore", "/tmp/filestore"
     master.vm.synced_folder "~/.eyaml", "/tmp/keys"
