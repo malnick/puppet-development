@@ -1,0 +1,5 @@
+---
+sources:
+  sourceclear:
+    remote: git@github.com:sourceclear/puppet-control.git
+    basedir: /Users/malnick/projects/srcclr/devenviro/puppet/environments
